@@ -10,3 +10,23 @@ body {
   background-color: $body_backgroundColor;
   font-family: $default_fontFamily;
 }
+
+main {
+  @include elementsCenterer();
+  position: relative;
+  min-height: 100vh;
+}
+
+.webcam_element {
+  height: 500px;
+}
+
+.canvas_element {
+  position: absolute;
+  height: 100%;
+}
+
+.webcam_element,
+.canvas_element {
+  width: 100%;
+}
